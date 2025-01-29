@@ -4,9 +4,8 @@ const axios = require('axios');
 
 const app = express();
 
-// Allow requests from your frontend's origin
 app.use(cors({
-  origin: 'https://property-data-detective-8qm3ghubb-daisys-projects-0a438b62.vercel.app'
+  origin: 'https://property-data-detective.vercel.app'
 }));
 app.use(express.json());
 
