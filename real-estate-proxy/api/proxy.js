@@ -4,9 +4,12 @@ const axios = require('axios');
 
 const app = express();
 
+// Use CORS with specific origin
+const allowedOrigins = ['https://2899f02b-3ec8-4d9d-9f23-726191b18bd8.lovableproject.com'];
 app.use(cors({
-  origin: 'https://property-data-detective-git-main-daisys-projects-0a438b62.vercel.app'
+    origin: allowedOrigins,
 }));
+
 app.use(express.json());
 
 app.post('/api/proxy', async (req, res) => {
