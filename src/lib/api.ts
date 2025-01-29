@@ -1,5 +1,5 @@
 export const submitUrl = async (jinaUrl: string) => {
-  const response = await fetch('property-data-detective-8qm3ghubb-daisys-projects-0a438b62.vercel.app', {
+  const response = await fetch('https://property-data-detective-8qm3ghubb-daisys-projects-0a438b62.vercel.app/api/proxy', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
