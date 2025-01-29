@@ -5,7 +5,7 @@ const axios = require('axios');
 const app = express();
 
 app.use(cors({
-  origin: 'https://property-data-detective.vercel.app'
+  origin: 'https://property-data-detective-git-main-daisys-projects-0a438b62.vercel.app'
 }));
 app.use(express.json());
 
