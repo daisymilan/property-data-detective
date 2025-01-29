@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { submitUrl } from "@/lib/api";
 import LoadingSpinner from "./LoadingSpinner";
 import { useToast } from "@/components/ui/use-toast";
