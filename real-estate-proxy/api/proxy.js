@@ -5,7 +5,7 @@ const axios = require('axios');
 const app = express();
 
 // Use CORS with specific origin
-const allowedOrigins = ['https://2899f02b-3ec8-4d9d-9f23-726191b18bd8.lovableproject.com'];
+const allowedOrigins = ['https://property-data-detective.vercel.app'];
 app.use(cors({
     origin: allowedOrigins,
 }));
