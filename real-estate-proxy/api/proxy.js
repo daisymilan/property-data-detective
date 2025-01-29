@@ -4,15 +4,9 @@ const axios = require('axios');
 
 const app = express();
 
-// Use CORS with specific origin
-const allowedOrigins = [
-  'https://property-data-detective.vercel.app',
-  'https://property-data-detective-git-main-daisys-projects-0a438b62.vercel.app',
-  'https://property-data-detective-git-dev-daisys-projects-0a438b62.vercel.app',
-  'https://property-data-detective-8qm3ghubb-daisys-projects-0a438b62.vercel.app'
-];
+// Use CORS with wildcard to allow all origins
 app.use(cors({
-    origin: allowedOrigins,
+    origin: '*',
 }));
 
 app.use(express.json());
