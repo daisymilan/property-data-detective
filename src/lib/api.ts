@@ -1,5 +1,5 @@
 export const submitUrl = async (jinaUrl: string) => {
-  const response = await fetch('https://n8n.servenorobot.com/webhook/real-estate', {
+  const response = await fetch('https://your-proxy.vercel.app/api/proxy', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
