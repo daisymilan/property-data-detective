@@ -20,7 +20,7 @@ app.use(express.json());
 app.post('/api/proxy', async (req, res) => {
   try {
     const response = await axios.post(
-      'https://n8n.servenorobot.com/webhook/real-estate',
+      'https://n8n.servenorobot.com/webhook/real-estate-bot',
       req.body,
       {
         headers: {
