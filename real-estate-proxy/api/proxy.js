@@ -4,8 +4,9 @@ const axios = require('axios');
 
 const app = express();
 
+// Allow requests from your frontend's origin
 app.use(cors({
-  origin: '*'  // For development. You can restrict this to your lovable.dev domain later
+  origin: 'https://property-data-detective-8qm3ghubb-daisys-projects-0a438b62.vercel.app'
 }));
 app.use(express.json());
 
